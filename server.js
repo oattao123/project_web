@@ -267,23 +267,35 @@ const products = [
        price: 140,
        countInStock: 10,
      },
+     {
+          name: "Samsung Galaxy S21",
+          imageUrl:
+            "https://images.unsplash.com/photo-1610366525881-5a6c4c3a9a3c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8c2Ftc3VuZyUyMGdhbGF4eSUyMHN2YXJpZXMlMjBzZWVrZXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+          description:
+               "Samsung Galaxy S21 is a line of Android-based smartphones designed, developed, marketed, and manufactured by Samsung Electronics as part of its Galaxy S series. They collectively serve as the successor to the Galaxy S20 and were released on 29 January 2021.",
+          price: 799,
+          countInStock: 10,
+     }
    ];
    
    module.exports = products;
 
-router.get('/productos', async (req, res) => {
-     try {
-          const productos = await Producto.find()
-          res.json(productos)
-     } catch (error) {
-          console.log(error)
-          res.status(500).send('Hubo un error')
-     }
-})
+// Get ALL Productos
+// router.get('/productos' , async (req, res) => {
+//      try {
+//           const productos = await Producto.find()
+//           res.json(productos)
+//      } catch (error) {
+//           console.log(error)
+//           res.status(500).send('Hubo un error')
+//      }
+// }
+// )
 
-router.get('/producto/:id', async (req, res) => {
+// Get Producto by Name
+router.get('/producto/:name', async (req, res) => {
      try {
-          const producto = await Producto.findById(req.params.id)
+          const producto = await Producto.find({name: req.params.name})
           res.json(producto)
      } catch (error) {
           console.log(error)
@@ -292,19 +304,20 @@ router.get('/producto/:id', async (req, res) => {
 }
 )
 
-const importData = async () => {
-     try {
-          await Producto.deleteMany()
-          await Producto.insertMany(products)
-          console.log('Data importada')
-          process.exit()
-     } catch (error) {
-          console.error('Error importando data')
-          process.exit(1)
-     }
-}
 
-importData()
+// const importData = async () => {
+//      try {
+//           await Producto.deleteMany()
+//           await Producto.insertMany(products)
+//           console.log('Data importada')
+//           process.exit()
+//      } catch (error) {
+//           console.error('Error importando data')
+//           process.exit(1)
+//      }
+// }
+
+// importData()
 
 app.use('/', router);
 
