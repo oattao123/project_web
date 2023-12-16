@@ -48,9 +48,21 @@ const getUserById = async (req, res) => {
      }
 }
 
+const getUserByName = async (req, res) => {
+     try {
+          const user = await User.findOne({ username: req.params.username })
+          res.json(user)
+     }
+     catch (error) {
+          console.log(error)
+          res.status(500).send('Hubo un error')
+     }
+}
+
 module.exports = {
      getUsers,
-     getUserById
+     getUserById,
+     getUserByName
 }
 
 const userSchema = mongoose.Schema({
@@ -160,6 +172,9 @@ router.get('/user/:id', async (req, res) => {
      }
 })
 
+
+
+
 const getProductos = async (req, res) => {
      try {
           const productos = await Producto.find()
@@ -184,6 +199,19 @@ module.exports = {
      getProductos,
      getProductoById
 }
+
+const getProductoByName = async (req, res) => {
+     try {
+          const producto = await Producto.findOne({ name: req.params.name })
+          res.json(producto)
+     }
+     catch (error) {
+          console.log(error)
+          res.status(500).send('Hubo un error')
+     }
+}
+
+
 
 const productoSchema = mongoose.Schema({
      name : {
@@ -280,30 +308,34 @@ const products = [
    
    module.exports = products;
 
-// Get ALL Productos
-// router.get('/productos' , async (req, res) => {
+// // Get ALL Productos
+// router.get('/productos', async (req, res) => {
 //      try {
-//           const productos = await Producto.find()
-//           res.json(productos)
+//          const products = await Producto.find({});
+//          res.json(products);
 //      } catch (error) {
-//           console.log(error)
-//           res.status(500).send('Hubo un error')
+//          console.error(error);
+//          res.status(500).send('Error on the server.');
 //      }
-// }
-// )
+//  });
 
-// Get Producto by Name
-router.get('/producto/:name', async (req, res) => {
-     try {
-          const producto = await Producto.find({name: req.params.name})
-          res.json(producto)
-     } catch (error) {
-          console.log(error)
-          res.status(500).send('Hubo un error')
-     }
-}
-)
+// // Get Producto by Name
+// router.get('/producto/:name', async (req, res) => {
+//      try {
+//          const productName = req.params.name;
+//          const product = await Producto.findOne({ name: productName });
+//          if (!product) {
+//              return res.status(404).send('Product not found.');
+//          }
+//          res.json(product);
+//      } catch (error) {
+//          console.error(error);
+//          res.status(500).send('Error on the server.');
+//      }
+//  });
 
+router.get("/", getProductos);
+router.get("/:id", getProductoById);
 
 // const importData = async () => {
 //      try {
@@ -319,7 +351,20 @@ router.get('/producto/:name', async (req, res) => {
 
 // importData()
 
-app.use('/', router);
+app.get('/', (req, res) => {
+     res.send('Hola Mundo')
+})
+
+app.get ('/api', (req, res) => {
+     res.send('Hola API')
+}
+)
+
+app.get('/api/users', getUsers)
+app.get('/api/user/:id', getUserById)
+
+app.get('/api/productos', getProductos)
+app.get('/api/producto/:name', getProductoByName)
 
 const port = process.env.PORT || 5002
 
