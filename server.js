@@ -242,68 +242,225 @@ module.exports = Producto
 
 const products = [
      {
-       name: "PlayStation 5",
-       imageUrl:
-         "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80",
-       description:
-         "PlayStation 5 (PS5) is a home video game console developed by Sony Interactive Entertainment. Announced in 2019 as the successor to the PlayStation 4, the PS5 was released on November 12, 2020 in Australia, Japan, New Zealand, North America, Singapore, and South Korea, and November 19, 2020 onwards in other major markets except China and India.",
-       price: 499,
-       countInStock: 15,
-     },
-     {
-       name: "Iphone 12",
-       imageUrl:
-         "https://images.unsplash.com/photo-1605787020600-b9ebd5df1d07?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1463&q=80",
-       description:
-         "Welcome to a new era of iPhone. Beautifully bright 6.1-inch Super Retina XDR display.1 Ceramic Shield with 4x better drop performance.2 Incredible low-light photography with Night mode on all cameras. Cinema-grade Dolby Vision video recording, editing, and playback. Powerful A14 Bionic chip. And new MagSafe accessories for easy attach and faster wireless charging.3 Let the fun begin.",
-       price: 1099,
-       countInStock: 10,
-     },
-     {
-       name: "Cannon EOS-1D",
-       imageUrl:
-         "https://images.unsplash.com/photo-1519183071298-a2962feb14f4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-       description:
-         "The EOS-1D X combines speed with image quality, to create the next generation camera for professionals. Full frame 18 megapixel sensor with Dual “DIGIC 5+” processors sets the standard, and up to 12 frames per second shooting takes it beyond.",
-       price: 1300,
-       countInStock: 5,
-     },
-     {
-       name: "Amazon Alexa",
-       imageUrl:
-         "https://images.unsplash.com/photo-1518444065439-e933c06ce9cd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80",
-       description:
-         "It is capable of voice interaction, music playback, making to-do lists, setting alarms, streaming podcasts, playing audiobooks, and providing weather, traffic, sports, and other real-time information, such as news. Alexa can also control several smart devices using itself as a home automation system.",
-       price: 50,
-       countInStock: 25,
-     },
-     {
-       name: "Audio Technica Headphones",
-       imageUrl:
-         "https://images.unsplash.com/photo-1558756520-22cfe5d382ca?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-       description:
-         "Outfitted with 45mm large-aperture dynamic drivers and an over-ear, closed-back design, the ATH-M50x headphones deliver clarity, deep bass, and extended bandwidth (15 Hz to 28 kHz) while isolating you from outside sounds.",
-       price: 233,
-       countInStock: 4,
-     },
-     {
-       name: "JBL FLIP 4",
-       imageUrl:
-         "https://images.unsplash.com/photo-1564424224827-cd24b8915874?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80",
-       description:
-         "JBL Flip 4 is the next generation in the award-winning Flip series; it is a portable Bluetooth speaker that delivers surprisingly powerful stereo sound. This compact speaker is powered by a 3000mAh rechargeable Li-ion battery that offers up to 12 hours of continuous, high-quality audio playtime.",
-       price: 140,
-       countInStock: 10,
-     },
-     {
-          name: "Samsung Galaxy S21",
+          name: "Football Manager 2024",
           imageUrl:
-            "https://images.unsplash.com/photo-1610366525881-5a6c4c3a9a3c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8c2Ftc3VuZyUyMGdhbGF4eSUyMHN2YXJpZXMlMjBzZWVrZXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+          "https://www.gamesrig.com/img/index/football-manager-2024-cover.jpg",
           description:
-               "Samsung Galaxy S21 is a line of Android-based smartphones designed, developed, marketed, and manufactured by Samsung Electronics as part of its Galaxy S series. They collectively serve as the successor to the Galaxy S20 and were released on 29 January 2021.",
+               "Football Manager 2024 is a football management simulation video game developed by Sports Interactive and published by Sega. It was released worldwide for Microsoft Windows, macOS and Nintendo Switch on 9 November 2023.",
+          price: 1299,
+          countInStock: 10,
+     },
+     {
+          name: "Sekiro: Shadows Die Twice - GOTY Edition",
+          imageUrl:
+          "https://www.gamesrig.com/img/index/sekiro-shadows-die-twice-goty-edition-cover.jpg",
+          description:
+               "Sekiro: Shadows Die Twice is an action-adventure video game developed by FromSoftware and published by Activision. The game was released worldwide for Microsoft Windows, PlayStation 4, and Xbox One on 22 March 2019.",
+          price: 1290,
+          countInStock: 10,
+     },
+     {
+          name: "NBA 2K23",
+          imageUrl:
+          "https://www.gamesrig.com/img/index/nba-2k23-cover.jpg",
+          description:
+               "NBA 2K23 is a basketball simulation video game developed by Visual Concepts and published by 2K Sports, based on the National Basketball Association. It is the 23rd installment in the NBA 2K franchise and the successor to NBA 2K22.",
+          price: 590,
+          countInStock: 10,
+     },
+     {
+          name: "God of War",
+          imageUrl:
+          "https://www.gamesrig.com/img/index/god-of-war-cover.jpg",
+          description:
+               "God of War is an action-adventure game developed by Santa Monica Studio and published by Sony Interactive Entertainment. Released on April 20, 2018, for the PlayStation 4 console, it is the eighth installment in the God of War series, the eighth chronologically, and the sequel to 2010's God of War III.",
+          price: 899,
+          countInStock: 10,
+     },
+     {
+          name: "Hogwarts Legacy: Digital Deluxe Edition",
+          imageUrl:
+          "https://www.gamesrig.com/img/index/hogwarts-legacy-digital-deluxe-edition-cover.jpg",
+          description:
+               "Hogwarts Legacy is an upcoming action role-playing video game set in the late 1800s in the Wizarding World being developed by Avalanche Software and published by Warner Bros. Interactive Entertainment under its Portkey Games label.",
+          price: 1290,
+          countInStock: 10,
+     },
+     {
+          name: "NBA 2K24 Kobe Bryant Edition",
+          imageUrl:
+          "https://www.gamesrig.com/img/index/nba-2k24-cover.jpg",
+          description:
+               "NBA 2K24 is a basketball simulation video game developed by Visual Concepts and published by 2K Sports, based on the National Basketball Association. It is the 24th installment in the NBA 2K franchise and the successor to NBA 2K23.",
+          price: 790,
+          countInStock: 10,
+     },
+     {
+          name: "Resident Evil 4",
+          imageUrl:
+          "https://www.gamesrig.com/img/index/resident-evil-4-cover.jpg",
+          description:
+               "Resident Evil 4 is a third-person shooter game developed by Capcom Production Studio 4 and published by Capcom. The sixth major installment in the Resident Evil series, it was originally released for the GameCube in 2005.",
+          price: 1490,
+          countInStock: 10,
+     },
+     {
+          name: "Home Sweet Home EP2",
+          imageUrl:
+          "https://www.gamesrig.com/img/index/home-sweet-home-ep2-cover.jpg",
+          description:
+               "Home Sweet Home EP2 is a first-person horror adventure game based on Thai myths and beliefs. The core gameplay focuses on storytelling and stealth to avoid perilous spirits hunting you. Moreover, few puzzles are added into the game, making gameplay more various.",
+          price: 299,
+          countInStock: 10,
+     },
+     {
+          name: "Marvel’s Spider-Man: Miles Morales",
+          imageUrl:
+          "https://www.gamesrig.com/img/index/marvels-spider-man-miles-morales-cover.jpg",
+          description:
+               "Marvel's Spider-Man: Miles Morales is a dynamic action-adventure game featuring the young superhero Miles Morales. In this immersive gaming experience, players navigate Miles as he masters unique spider-like powers and faces challenges in a vividly rendered New York City.",
+          price: 899,
+          countInStock: 10,
+
+     },
+     {
+          name: "Project Zomboid",
+          imageUrl:
+          "https://www.gamesrig.com/img/index/project-zomboid-cover.jpg",
+          description:
+               "Project Zomboid is an open world survival horror video game in alpha stage development by British and Canadian independent developer, The Indie Stone. The game is set in a post apocalyptic, zombie infested world where the player is challenged to survive for as long as possible before inevitably dying.",
+          price: 299,
+          countInStock: 10,
+     },
+     {
+          name: "WWE 2K23",
+          imageUrl:
+          "https://www.gamesrig.com/img/index/wwe-2k23-cover.jpg",
+          description:
+               "WWE 2K23 is a professional wrestling video game developed by Visual Concepts and published by 2K Sports. It was released worldwide on October 22, 2023 for PlayStation 4, Xbox One and Microsoft Windows.",
+          price: 790,
+          countInStock: 10,
+     },
+     {
+          name: "Brothers - A Tale of Two Sons",
+          imageUrl:
+          "https://www.gamesrig.com/img/index/brothers-a-tale-of-two-sons-cover.jpg",
+          description:
+               "Brothers: A Tale of Two Sons is an adventure game developed by Starbreeze Studios and published by 505 Games for Xbox 360, Microsoft Windows, PlayStation 3, PlayStation 4, Xbox One, iOS, Android, Windows Phone, and Nintendo Switch.",
+          price: 299,
+          countInStock: 10,
+     },
+     {
+          name : "Mortal Kombat 1 Premium Edition",
+          imageUrl:
+          "https://www.gamesrig.com/img/index/mortal-kombat-1-premium-edition-cover.jpg",
+          description:
+               "Mortal Kombat 1 Premium Edition is a fighting game developed by NetherRealm Studios and published by Warner Bros. Interactive Entertainment. It is the eleventh main installment in the Mortal Kombat series and a sequel to 2015's Mortal Kombat X.",
+          price: 1290,
+          countInStock: 10,
+     },
+     {
+          name: "Squad",
+          imageUrl:
+          "https://www.gamesrig.com/img/index/squad-cover.jpg",
+          description:
+               "Squad is a tactical first-person shooter video game developed by Canadian studio Offworld Industries. It is self-published through Steam and is a spiritual successor to the multi-award-winning Project Reality modification for Battlefield 2.",
+          price: 299,
+          countInStock: 10,
+     },
+     {
+          name: "Marvel’s Spider-Man Remastered",
+          imageUrl:
+          "https://www.gamesrig.com/img/index/marvels-spider-man-remastered-cover.jpg",
+          description:
+               "Marvel's Spider-Man Remastered is an updated version of the acclaimed action-adventure game. It features enhanced graphics and improved gameplay mechanics, allowing players to experience the story of Peter Parker as Spider-Man in a visually stunning and more responsive New York City. The remaster includes the base game and previously released DLCs.",
+          price: 1290,
+          countInStock: 10,
+     },
+     {
+          name: "Back 4 Blood",
+          imageUrl:
+          "https://www.gamesrig.com/img/index/back-4-blood-cover.jpg",
+          description:
+               "Back 4 Blood is a first-person shooter game developed by Turtle Rock Studios and published by Warner Bros. Interactive Entertainment. It is a spiritual successor to Left 4 Dead, also developed by Turtle Rock Studios.",
+          price: 290,
+          countInStock: 10,
+     },
+     {
+          name: "Attack on Titan 2: Final Battle",
+          imageUrl:
+               "https://www.gamesrig.com/img/index/attack-on-titan-2-cover.jpg",
+          description:
+               "Attack on Titan 2: Final Battle is an action hack and slash video game based on Hajime Isayama's manga series of the same name released for Nintendo Switch, PlayStation 4, PlayStation Vita, Xbox One, Microsoft Windows and Stadia.",
+          price: 1199,
+          countInStock: 10,
+     },
+     {
+          name: "Battlefield 2042",
+          imageUrl:
+               "https://www.gamesrig.com/img/index/battlefield-2042-cover.jpg",
+          description:
+               "Battlefield 2042 is a first-person shooter video game developed by EA DICE and published by Electronic Arts. It is the seventeenth installment in the Battlefield series and the successor to 2018's Battlefield V.",
+          price: 999,
+          countInStock: 10,
+     },
+     {
+          name: "Final Fantasy XV Episode Ardyn Complete Edition",
+          imageUrl:
+               "https://www.gamesrig.com/img/index/final-fantasy-xv-episode-ardyn-complete-edition-cover.jpg",
+          description:
+               "Final Fantasy XV is an action role-playing game developed and published by Square Enix as part of the Final Fantasy series. It was released for the PlayStation 4 and Xbox One in 2016, Microsoft Windows in 2018, and Stadia as a launch title in 2019.",
+          price: 1290,
+          countInStock: 10,
+     },
+     {
+          name: "Don't Starve Together",
+          imageUrl:
+               "https://www.gamesrig.com/img/index/dont-starve-together-cover.jpg",
+          description:
+               "Don't Starve Together is a multiplayer survival video game developed by Klei Entertainment. It is a standalone multiplayer expansion of the uncompromising survival game Don't Starve.",
+          price: 299,
+          countInStock: 10,
+     },
+     {
+          name: "Gotham Knights",
+          imageUrl:
+               "https://www.gamesrig.com/img/index/gotham-knights-cover.jpg",
+          description:
+               "Gotham Knights is an upcoming action role-playing video game based on the DC Comics character Batman and his supporting cast. The game is being developed by WB Games Montréal and will be published by Warner Bros. Interactive Entertainment.",
+          price: 290,
+          countInStock: 10,
+
+     },
+     {
+          name: "Hatsune Miku: Project DIVA Mega Mix+",
+          imageUrl:
+               "https://www.gamesrig.com/img/index/hatsune-miku-project-diva-mega-mix-cover.jpg",
+          description:
+               "Hatsune Miku: Project DIVA Mega Mix is a rhythm game developed and published by Sega for the Nintendo Switch. The game is a port of Hatsune Miku: Project DIVA Future Tone, containing over 100 songs, 300 modules, and Arcade Mode.",
           price: 799,
           countInStock: 10,
-     }
+     },
+     {
+          name: "Farm Together",
+          imageUrl:
+               "https://www.gamesrig.com/img/index/farm-together-cover.jpg",
+          description:
+               "Farm Together is a farming simulation video game developed by Milkstone Studios and published by Milkstone Studios SL. The game was released for Microsoft Windows on 11 October 2018, for Xbox One on 1 March 2019, and for PlayStation 4 on 6 November 2019.",
+          price: 299,
+          countInStock: 10,
+
+     },
+     {
+          name: "The Henry Stickmin Collection",
+          imageUrl:
+               "https://www.gamesrig.com/img/index/the-henry-stickmin-collection-cover.jpg",
+          description:
+               "The Henry Stickmin Collection is a Newgrounds choose-your-own-path classic, reborn and revitalized. This 6-game epic culminates in multiple entirely canon, extremely different endings. Each step of the journey has you choose from options such as a Teleporter or calling in your buddy Charles to help you out.",
+          price: 199,
+          countInStock: 10,
+     },
+
    ];
    
    module.exports = products;
@@ -337,19 +494,19 @@ const products = [
 router.get("/", getProductos);
 router.get("/:id", getProductoById);
 
-// const importData = async () => {
-//      try {
-//           await Producto.deleteMany()
-//           await Producto.insertMany(products)
-//           console.log('Data importada')
-//           process.exit()
-//      } catch (error) {
-//           console.error('Error importando data')
-//           process.exit(1)
-//      }
-// }
+const importData = async () => {
+     try {
+          await Producto.deleteMany()
+          await Producto.insertMany(products)
+          console.log('Data importada')
+          process.exit()
+     } catch (error) {
+          console.error('Error importando data')
+          process.exit(1)
+     }
+}
 
-// importData()
+importData()
 
 app.get('/', (req, res) => {
      res.send('Hola Mundo')
